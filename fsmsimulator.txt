@@ -1,0 +1,13 @@
+Simulación de Máquina de Estados Finitos:
+
+state = start_state
+input = get_next_input
+while not end of input do
+    state = move(state, input)
+    input = get_next_input
+end
+
+if state is a final state
+    return "ACCEPT"
+else
+    return "REJECT"
